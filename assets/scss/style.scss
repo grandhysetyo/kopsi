@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+$raleway-font : 'Raleway', sans-serif;
+
+// Color
+$blue: #2181D4;
+$orange: #F15A24;
+$green: #22B573;
+
+#custom-nav {
+
+    .nav-link {
+        font-size: 14px;
+        color: $blue;
+        font-weight: 500;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+        margin-right: 5px;
+        border-radius: 15px;
+    }
+    .nav-link:hover{
+        color: #fff;
+        background-color: $blue;
+    }
+    .nav-link:active{
+        color: #fff;
+        background-color: $blue;
+    }
+    .nav-link.active{
+        color: #fff;
+        background-color: $blue;
+    }
+    .nav-link.masuk{
+        color: #fff;
+        background-color: $blue;
+        padding-right: 20px !important;
+        padding-left: 20px !important;
+    }
+    .navbar-brand img{
+        margin-right: 8px;
+    }
+    .navbar-brand{
+        color: #fff;
+    }
+    .navbar-custom .navbar-toggler{
+        color: #fff !important;
+        border-color: #fff !important;
+    }
+    .navbar-toggler-icon{
+        color: #fff;
+    }
+}
+
+
+.title-section{
+    font-family: $raleway-font;
+    font-weight: bold;   
+    text-align: center; 
+    color: $blue;
+}
+// Ada apa di
+.menu {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    
+    img{
+        width: 55%;
+    }
+    .menu-1{
+      position: absolute;          
+      top: 0; 
+      left: 2%;
+    }
+    .menu-2{        
+        position: absolute;          
+        top: 20%; 
+        right: 10%;
+        
+    }
+    .menu-3{    
+        position: absolute;          
+        top: 50%; 
+        left: 10%;
+    }
+}
+.whatis{
+    font-family: $raleway-font;
+    color: $blue;
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+    h5{
+        font-weight: bold;
+    }
+    h2{
+        font-weight: 900;
+    }
+    p{
+        color: #757575;
+    }
+}
+// Linimasa
+.linimasa {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 30px 0;
+    .linimasa-card{        
+        margin: auto;
+        text-align: center;
+       
+        .linimasa-icon{
+            width: 120px;           
+            margin: auto;   
+            img{
+                object-fit: contain;
+            }         
+        }  
+        h4{
+            font-family: $raleway-font;
+            font-weight: 900;
+        }  
+        span{
+            font-family: $raleway-font;
+            font-weight: 600;
+            color: #757575;
+        }  
+        .blue{
+            color: $blue;
+        }
+        .orange{
+            color: $orange;
+        }
+        .green{
+            color: $green;
+        }
+    }
+    .linimasa-card.up{
+        margin-top: 0;
+        @media (max-width: 575.98px) {
+            margin-top: 30px;            
+        }
+        @media (max-width: 575.98px) {
+            margin-top: 30px;      
+        }
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            margin-top: 30px;      
+        }
+        @media (min-width: 768px) and (max-width: 991.98px) { 
+            margin-top: 30px;
+        }
+    }
+    .linimasa-card.down{
+        margin-top: 80px;
+        @media (max-width: 575.98px) {
+            margin-top: 30px;            
+        }
+        @media (max-width: 575.98px) {
+            margin-top: 30px;      
+        }
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            margin-top: 30px;      
+        }
+        @media (min-width: 768px) and (max-width: 991.98px) { 
+            margin-top: 30px;
+        }
+    }
+    @media (max-width: 575.98px) {
+        flex-direction: column;        
+    }
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        flex-direction: column;        
+    }
+    @media (min-width: 768px) and (max-width: 991.98px) { 
+        flex-direction: column; 
+    }
+}
+.time{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 30px 0;
+    .time-card{
+        margin: auto;
+        text-align: center;
+        .count{
+            display: flex;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            border: 1px solid $blue;
+            margin-bottom: 20px;
+            
+            h1{
+                margin: auto;
+                font-family: $raleway-font;
+                color: $blue;
+                font-weight: 900;
+            }
+            
+        }
+        span{
+            color: $blue;
+            font-family: $raleway-font;
+            font-weight: 500;
+        }
+    }
+}
+.footer{
+    width: 100%;
+    background-image: url('/assets/images/footer.svg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 250px;
+    hr{            
+        border-top: 1px solid #00C4FF;           
+    }
+    .logo-footer{
+        text-align: center;
+        
+    }
+    .sosmed{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 50%;
+        margin: auto;        
+        .ico-sosmed{                        
+            text-align: center;  
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid #fff;            
+            color: #fff;
+            margin: auto;
+            padding: 8px;
+            i{
+                font-size: 20px;
+            }
+        }
+    }
+    .txt-footer{
+        text-align: center;
+        color: #fff;
+    }
+}
+
+// XS
+@media (max-width: 575.98px) {
+}
+// SM
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+// MD
+@media (min-width: 768px) and (max-width: 991.98px) { 
+}
+// LG
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+// XL
+@media (min-width: 1200px) {
+}
