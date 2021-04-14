@@ -7,7 +7,8 @@ $orange: #F15A24;
 $green: #22B573;
 
 #custom-nav {
-
+    padding-top: 20px;
+    padding-bottom: 20px;
     .nav-link {
         font-size: 14px;
         color: $blue;
@@ -60,9 +61,26 @@ $green: #22B573;
     color: $blue;
 }
 // Header
-
 header{
-    background-color: $blue;
+    background-image: url('/assets/images/header.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+    .header-banner{
+        margin-top: 6em;
+        margin-bottom: 6em;
+        a,p{
+            margin-left: 30px;
+        }
+        @media (max-width: 575.98px) {
+            background-color: #fff;
+            opacity: 0.8;
+        }
+    }
+}
+.banner{
+    background-color: #fff;
     padding-top: 1em;
     padding-bottom: 1em;
 }
@@ -81,7 +99,7 @@ header{
     background-attachment: fixed;
 }
 #slider-header h3 {        
-    color: #fff;
+    color: $blue;
     line-height: 40px;
     letter-spacing: 0.5px;
     font-weight: 600;
@@ -91,16 +109,16 @@ header{
 #slider-header p {
     font-size: 18px;
     margin-bottom: 40px;
-    color: #fff;
+    color: #757575;
 } 
 #slider-header img{
     width: 80%;   
     margin: auto; 
 }
 #slider-header .carousel-item a {
-    background: #fff;
+    background: $blue;
     font-size: 14px;
-    color: $blue;
+    color: #fff;
     // padding: 13px 32px;
     display: inline-block;
 }
@@ -154,7 +172,7 @@ header{
     width: 10px;
     height: 10px;
     border-radius: 100%;
-    background-color: #e4e4e4;
+    background-color: #757575;
 }
 #slider-header .carousel-indicators{    
     left: 60%;
@@ -352,21 +370,84 @@ header{
         left: 10%;
     }
 }
-.whatis{
+.bidang{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
     font-family: $raleway-font;
     color: $blue;
-    padding-top: 4rem !important;
-    padding-bottom: 4rem !important;
-    margin-top: 6em;
-    margin-bottom: 6em;
-    h5{
-        font-weight: bold;
-    }
+    width: fit-content;
+    
+    .card-bidang{
+        width: 50%;
+    } 
+    img{
+        width: 35%;        
+    }  
     h2{
         font-weight: 900;
     }
     p{
         color: #757575;
+    }
+    // XS, SM, MD
+    @media (max-width: 991.98px) { 
+        flex-direction: column;
+        .card-bidang{
+            width: 100%;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 50px;
+        } 
+        img{
+            width: 60%;        
+        } 
+    }
+}
+.bidang.bidang1{
+    position: relative;
+    top: 0;
+    left: 0;
+    .card-bidang{
+        margin-left: 120px;
+        @media (max-width: 991.98px) { 
+            margin-left: 0;
+        }
+    }
+    @media (max-width: 991.98px) { 
+        top: 0;
+        left: 0;
+    }
+}
+.bidang.bidang2{
+    position: relative;
+    top: -10%;
+    left: 12%;
+    .card-bidang{
+        margin-left: 120px;
+        @media (max-width: 991.98px) { 
+            margin-left: 0;
+        }
+    }
+    @media (max-width: 991.98px) { 
+        top: 0;
+        left: 0;
+    }
+}
+.bidang.bidang3{
+    position: relative;
+    top: -150px;
+    left: 2%;
+    .card-bidang{
+        margin-left: 120px;
+        @media (max-width: 991.98px) { 
+            margin-left: 0;
+        }
+    }
+    @media (max-width: 991.98px) { 
+        top: 0;
+        left: 0;
     }
 }
 // Linimasa
@@ -541,6 +622,9 @@ header{
     .card-pengumuman:hover{
         text-decoration: none;
         opacity: 1;
+    }
+    @media (max-width: 991.98px) {
+        padding: 0;
     }
 }
 .footer{

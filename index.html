@@ -15,40 +15,90 @@
     <link rel="stylesheet" type="text/css" href="assets/lib/slick-1.8.1/slick/slick-theme.css"/>
 </head>
 <body>
-    <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center" id="custom-nav">
+    <header>        
+        <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center " id="custom-nav">
+            <div class="container">
+                <a href="/" class="navbar-brand d-flex w-50 mr-auto d-sm-block d-md-none"><img src="assets/images/logo.svg" alt="Logo Kopsi" width="200px"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse w-100" id="navbar">
+                    <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Beranda </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Profil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Informasi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Berita</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Galleri</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Kontak Kami</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link masuk" href="#">Masuk</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <div class="container">
-            <a href="/" class="navbar-brand d-flex w-50 mr-auto"><img src="assets/images/logo.svg" alt="Logo Kopsi" width="200px"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse w-100" id="navbar">
-                <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Beranda </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Profil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Informasi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Berita</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Galleri</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Kontak Kami</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link masuk" href="#">Masuk</a>
-                    </li>
-                </ul>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="header-banner">
+                        <img src="assets/images/logo.svg" alt="Logo">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni odit nam debitis, tenetur dolores distinctio nulla eius? Delectus, natus harum error aliquam beatae pariatur amet culpa temporibus nemo provident. Eius!</p>
+                        <a href="#" class="btn btn-lg btn-primary">Selengkapnya</a>
+                    </div>
+                    
+                </div>                
             </div>
         </div>
-    </nav>
-    <header>
+    </header>
+    
+    
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mx-auto my-5">
+                    <h2 class="title-section">BIDANG KOMPETISI</h2>
+                </div>
+            </div>
+            <div class="row">                
+                <div class="col-lg-12 ">
+                    <div class="bidang bidang1">  
+                        <img src="assets/images/menu-1.svg" alt="">  
+                        <div class="card-bidang">
+                            <h2>Ilmu Pengetahuan Sosial, Kemanusiaan, dan Seni</h2>
+                            <p>Bidang ini berkaitan dengan studi tentang masyarakat, yaitu cara orang berperilaku dan mempengaruhi dunia di sekitar kita, tentang kebajikan dan cinta kasih manusia terhadap sesama, serta tentang kegiatan atau produk manusia yang melibatkan imajinasi kreatif dalam mengungkapkan keindahan dan emosi. </p>                        
+                        </div>                                           
+                    </div>
+                    <div class="bidang bidang2">  
+                        <img src="assets/images/menu-2.svg" alt="">  
+                        <div class="card-bidang">
+                            <h2>Ilmu Pengetahuan Alam dan Lingkungan</h2>
+                            <p>Bidang ini berkaitan dengan pemahaman manusia secara sistematis terhadap gejala alam dalam bentuk konsep, prinsip, dan hukum yang teruji kebenarannya melalui suatu metode ilmiah. Termasuk dalam gejala alam adalah lingkungan, yaitu segala sesuatu berupa proses atau peristiwa di sekitar kita baik yang bersifat biotik maupun abiotik</p>                        
+                        </div>                                           
+                    </div>
+                    <div class="bidang bidang3">  
+                        <img src="assets/images/menu-3.svg" alt="">  
+                        <div class="card-bidang">
+                            <h2>Ilmu Pengetahuan Teknik dan Rekayasa</h2>
+                            <p>Bidang ini adalah tentang rancangan, yaitu pemikiran dan upaya  membuat sesuatu untuk kepentingan manusia.  Perwujudannya berupa produk teknologi.</p>                        
+                        </div>                                           
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section>
+    <section class="banner">
         <div class="container">            
             <div class="row">
                 <div class="col">
@@ -96,28 +146,6 @@
                             <li data-target="#slider-header" data-slide-to="2"></li>
                         </ol>
                         
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    
-    <section>
-        <div class="container">
-            <div class="row">                
-                <div class="col-lg-5 ml-5">
-                    <div class="whatis">
-                        <h5>ADA APA DI</h5>
-                        <h2>KOMPETISI  PENELITIAN SISWA INDONESIA <br>(KoPSI 2021)?</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur quod eius eaque quasi rem eos perspiciatis? Commodi veniam culpa recusandae quos vero quidem illum, porro fuga expedita! Ab, possimus eius!</p>
-                        <a href="#" class="btn btn-md btn-primary" target="_blank">Unduh Pedoman</a>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="menu">
-                        <img src="assets/images/menu-1.svg" class="menu-1" alt="">                     
-                        <img src="assets/images/menu-2.svg" class="menu-2" alt="">                     
-                        <img src="assets/images/menu-3.svg" class="menu-3" alt=""> 
                     </div>
                 </div>
             </div>

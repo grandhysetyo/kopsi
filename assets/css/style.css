@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+#custom-nav {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 #custom-nav .nav-link {
   font-size: 14px;
   color: #2181D4;
@@ -50,7 +54,28 @@
 }
 
 header {
-  background-color: #2181D4;
+  background-image: url("/assets/images/header.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 100vh;
+}
+header .header-banner {
+  margin-top: 6em;
+  margin-bottom: 6em;
+}
+header .header-banner a, header .header-banner p {
+  margin-left: 30px;
+}
+@media (max-width: 575.98px) {
+  header .header-banner {
+    background-color: #fff;
+    opacity: 0.8;
+  }
+}
+
+.banner {
+  background-color: #fff;
   padding-top: 1em;
   padding-bottom: 1em;
 }
@@ -71,7 +96,7 @@ header {
 }
 
 #slider-header h3 {
-  color: #fff;
+  color: #2181D4;
   line-height: 40px;
   letter-spacing: 0.5px;
   font-weight: 600;
@@ -82,7 +107,7 @@ header {
 #slider-header p {
   font-size: 18px;
   margin-bottom: 40px;
-  color: #fff;
+  color: #757575;
 }
 
 #slider-header img {
@@ -91,9 +116,9 @@ header {
 }
 
 #slider-header .carousel-item a {
-  background: #fff;
+  background: #2181D4;
   font-size: 14px;
-  color: #2181D4;
+  color: #fff;
   display: inline-block;
 }
 
@@ -148,7 +173,7 @@ header {
   width: 10px;
   height: 10px;
   border-radius: 100%;
-  background-color: #e4e4e4;
+  background-color: #757575;
 }
 
 #slider-header .carousel-indicators {
@@ -331,22 +356,100 @@ header {
   left: 10%;
 }
 
-.whatis {
+.bidang {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
   font-family: "Raleway", sans-serif;
   color: #2181D4;
-  padding-top: 4rem !important;
-  padding-bottom: 4rem !important;
-  margin-top: 6em;
-  margin-bottom: 6em;
+  width: fit-content;
 }
-.whatis h5 {
-  font-weight: bold;
+.bidang .card-bidang {
+  width: 50%;
 }
-.whatis h2 {
+.bidang img {
+  width: 35%;
+}
+.bidang h2 {
   font-weight: 900;
 }
-.whatis p {
+.bidang p {
   color: #757575;
+}
+@media (max-width: 991.98px) {
+  .bidang {
+    flex-direction: column;
+  }
+  .bidang .card-bidang {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  .bidang img {
+    width: 60%;
+  }
+}
+
+.bidang.bidang1 {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.bidang.bidang1 .card-bidang {
+  margin-left: 120px;
+}
+@media (max-width: 991.98px) {
+  .bidang.bidang1 .card-bidang {
+    margin-left: 0;
+  }
+}
+@media (max-width: 991.98px) {
+  .bidang.bidang1 {
+    top: 0;
+    left: 0;
+  }
+}
+
+.bidang.bidang2 {
+  position: relative;
+  top: -10%;
+  left: 12%;
+}
+.bidang.bidang2 .card-bidang {
+  margin-left: 120px;
+}
+@media (max-width: 991.98px) {
+  .bidang.bidang2 .card-bidang {
+    margin-left: 0;
+  }
+}
+@media (max-width: 991.98px) {
+  .bidang.bidang2 {
+    top: 0;
+    left: 0;
+  }
+}
+
+.bidang.bidang3 {
+  position: relative;
+  top: -150px;
+  left: 2%;
+}
+.bidang.bidang3 .card-bidang {
+  margin-left: 120px;
+}
+@media (max-width: 991.98px) {
+  .bidang.bidang3 .card-bidang {
+    margin-left: 0;
+  }
+}
+@media (max-width: 991.98px) {
+  .bidang.bidang3 {
+    top: 0;
+    left: 0;
+  }
 }
 
 .linimasa {
@@ -551,6 +654,11 @@ header {
 .pengumuman .card-pengumuman:hover {
   text-decoration: none;
   opacity: 1;
+}
+@media (max-width: 991.98px) {
+  .pengumuman {
+    padding: 0;
+  }
 }
 
 .footer {
