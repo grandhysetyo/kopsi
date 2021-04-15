@@ -362,11 +362,19 @@ header .header-banner a, header .header-banner p {
   position: relative;
   align-items: center;
   font-family: "Raleway", sans-serif;
-  color: #2181D4;
   width: fit-content;
 }
 .bidang .card-bidang {
   width: 50%;
+}
+.bidang .card-bidang .blue {
+  color: #2181D4;
+}
+.bidang .card-bidang .orange {
+  color: #F15A24;
+}
+.bidang .card-bidang .green {
+  color: #22B573;
 }
 .bidang img {
   width: 35%;
@@ -583,18 +591,17 @@ header .header-banner a, header .header-banner p {
 .video-slider {
   width: 100%;
 }
-
-.video-slider iframe {
-  width: 550px;
-  height: 300px;
-}
-
-.link-yt {
+.video-slider .link-yt {
   position: relative;
   display: block;
 }
-
-.icon-yt {
+.video-slider .link-yt:hover .icon-yt {
+  color: #bbbbbb;
+}
+.video-slider .link-yt img {
+  margin: auto;
+}
+.video-slider .icon-yt {
   position: absolute;
   top: 45%;
   left: 45%;
@@ -602,33 +609,46 @@ header .header-banner a, header .header-banner p {
   font-size: 45px;
   color: #CC1D2D;
 }
-
-.link-yt:hover .icon-yt {
-  color: #bbbbbb;
+.video-slider .card-slider {
+  position: relative;
 }
-
-.link-yt img {
-  margin: auto;
-}
-
-.card-slider .caption {
-  display: block;
-  width: 80%;
+.video-slider .caption {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 40%;
+  height: 100%;
   text-align: center;
+  padding: 120px 10px;
+  color: #fff;
   margin: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 30px;
-  background-color: #ffffff;
-  color: #E78724;
-  border-radius: 18px;
+  text-align: center;
 }
-
-.card-slider.slick-slide {
+.video-slider .caption .link {
+  width: fit-content;
+  color: #fff;
+  padding: 8px 15px;
+  border: 1px solid #fff;
+  border-radius: 16px;
+  margin-top: 20px;
+}
+.video-slider .caption.blue {
+  background: linear-gradient(90deg, #1552a7 0%, #2295d6 100%);
+}
+.video-slider .caption.green {
+  background: linear-gradient(90deg, #45A129, #9FDAAE);
+}
+.video-slider .caption.orange {
+  background: linear-gradient(90deg, #1552a7 0%, #2295d6 100%);
+}
+.video-slider .card-slider.slick-slide {
   opacity: 0.3;
 }
-
-.slick-current.slick-active.slick-center {
+.video-slider .slick-current.slick-active.slick-center {
   opacity: 1;
 }
 

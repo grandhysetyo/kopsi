@@ -376,11 +376,20 @@ header{
     position: relative;
     align-items: center;
     font-family: $raleway-font;
-    color: $blue;
+    
     width: fit-content;
     
     .card-bidang{
         width: 50%;
+        .blue{
+            color: $blue;
+        }
+        .orange{
+            color: $orange;
+        }
+        .green{
+            color: $green;
+        }
     } 
     img{
         width: 35%;        
@@ -559,51 +568,73 @@ header{
 }
 /* Video Slider */
 .video-slider{
-    width: 100%;            
+    width: 100%; 
+    .link-yt{
+        position: relative;
+        display: block;
+    } 
+    .link-yt:hover .icon-yt{
+        color: #bbbbbb;
+    }
+    .link-yt img{
+        margin: auto;
+    }
+    .icon-yt{    
+        position: absolute;
+        top: 45%;
+        left: 45%;
+        display: block;
+        font-size: 45px;
+        color: #CC1D2D;
+    }  
+    .card-slider{
+        position: relative;
+    }
+    .caption{
+        display: flex;
+        align-items: center;
+        flex-direction: column;        
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        width: 40%;
+        height: 100%;
+        text-align: center;                            
+        padding: 120px 10px;        
+        color: #fff;
+        margin: auto;
+        text-align: center;
+        .link{            
+            width: fit-content;
+            color: #fff;
+            padding: 8px 15px;
+            border: 1px solid #fff;
+            border-radius: 16px;
+            margin-top: 20px;
+        }               
+    }
+    .caption.blue{
+        background: linear-gradient(90deg, rgba(21,82,167,1) 0%, rgba(34,149,214,1) 100%);
+    }
+    .caption.green{
+        background: linear-gradient(90deg, #45A129, #9FDAAE);
+    }
+    .caption.orange{
+        background: linear-gradient(90deg, rgba(21,82,167,1) 0%, rgba(34,149,214,1) 100%);
+    }
+    .card-slider.slick-slide{
+        opacity: 0.3;
+    }
+    .slick-current.slick-active.slick-center{
+        opacity: 1;
+    }        
 }
-.video-slider iframe{
-    width: 550px;
-    height: 300px;
-}
-.link-yt{
-    position: relative;
-    display: block;
-}
-.icon-yt{    
-    position: absolute;
-    top: 45%;
-    left: 45%;
-    display: block;
-    font-size: 45px;
-    color: #CC1D2D;
-}
-.link-yt:hover .icon-yt{
-    color: #bbbbbb;
-}
-.link-yt img{
-    margin: auto;
-}
-.card-slider .caption{
-    display: block;
-    width: 80%;
-    text-align: center;            
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 30px;
-    background-color: #ffffff;
-    color: #E78724;
-    border-radius: 18px;
-}
-.card-slider.slick-slide{
-    opacity: 0.3;
-}
-.slick-current.slick-active.slick-center{
-    opacity: 1;
-}
+
 .video-slider .slick-prev:before, .video-slider .slick-next:before {    
     color:#E18A29;    
 }
+// Pngumuman
 .pengumuman{
     display: flex;
     flex-direction: column;
