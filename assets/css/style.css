@@ -54,7 +54,7 @@
 }
 
 header {
-  background-image: url("/assets/images/header.svg");
+  background-image: url("/kopsi/assets/images/header.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -683,7 +683,7 @@ header .header-banner a, header .header-banner p {
 
 .footer {
   width: 100%;
-  background-image: url("/assets/images/footer.svg");
+  background-image: url("/kopsi/assets/images/footer.svg");
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;

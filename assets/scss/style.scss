@@ -6,6 +6,9 @@ $blue: #2181D4;
 $orange: #F15A24;
 $green: #22B573;
 
+$github_assets: '/kopsi';
+// $github_assets: '';
+
 #custom-nav {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -62,7 +65,7 @@ $green: #22B573;
 }
 // Header
 header{
-    background-image: url('/assets/images/header.svg');
+    background-image: url($github_assets+'/assets/images/header.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
@@ -660,7 +663,7 @@ header{
 }
 .footer{
     width: 100%;
-    background-image: url('/assets/images/footer.svg');
+    background-image: url($github_assets+'/assets/images/footer.svg');
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
