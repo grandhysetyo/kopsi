@@ -18,7 +18,7 @@
     <header>        
         <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center " id="custom-nav">
             <div class="container">
-                <a href="/" class="navbar-brand d-flex w-50 mr-auto d-sm-block d-md-none"><img src="assets/images/logo.svg" alt="Logo Kopsi" width="200px"></a>
+                <a href="/" class="navbar-brand d-flex w-50 mr-auto"><img src="assets/images/logo.svg" alt="Logo Kopsi" width="200px"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -53,7 +53,8 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="header-banner">
-                        <img src="assets/images/logo.svg" alt="Logo">
+                        <h3>ADA APA DI</h3>
+                        <h1>KOMPETISI PENELITIAN SISWA INDONESIA <br>(KoPSI 2021)?</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni odit nam debitis, tenetur dolores distinctio nulla eius? Delectus, natus harum error aliquam beatae pariatur amet culpa temporibus nemo provident. Eius!</p>
                         <a href="#" class="btn btn-md btn-primary">Selengkapnya</a>
                     </div>
@@ -64,7 +65,7 @@
     </header>
     
     
-    <section>
+    <section class="bg-bidang">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mx-auto my-5">
@@ -350,7 +351,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>    
     <!-- Slick -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script>               
+    <script>   
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 150) {
+            $('.navbar').addClass('navbar-scroll');          
+            // document.getElementById("logo").src = "assets/image/logo-2.png";
+            }
+            else {
+            $('.navbar').removeClass('navbar-scroll');
+            // document.getElementById("logo").src = "assets/image/logo.svg";
+            }
+        });            
         // Set the date we're counting down to
         var countDownDate = new Date("Apr 25, 2021 15:37:25").getTime();
 

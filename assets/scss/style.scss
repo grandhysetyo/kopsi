@@ -73,8 +73,13 @@ header{
     .header-banner{
         margin-top: 6em;
         margin-bottom: 6em;
-        a,p{
-            margin-left: 30px;
+        color: $blue;
+        h3,h1{
+            font-weight: 600;
+        }
+        
+        p{
+            color: #757575;
         }
         @media (max-width: 575.98px) {
             background-color: #fff;
@@ -372,6 +377,11 @@ header{
         top: 50%; 
         left: 10%;
     }
+}
+.bg-bidang{
+    background-image: url('/assets/images/bg-bidang.png');    
+    background-size: cover;
+    background-position-x: right;
 }
 .bidang{
     display: flex;

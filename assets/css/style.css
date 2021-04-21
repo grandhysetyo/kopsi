@@ -63,9 +63,13 @@ header {
 header .header-banner {
   margin-top: 6em;
   margin-bottom: 6em;
+  color: #2181D4;
 }
-header .header-banner a, header .header-banner p {
-  margin-left: 30px;
+header .header-banner h3, header .header-banner h1 {
+  font-weight: 600;
+}
+header .header-banner p {
+  color: #757575;
 }
 @media (max-width: 575.98px) {
   header .header-banner {
@@ -354,6 +358,12 @@ header .header-banner a, header .header-banner p {
   position: absolute;
   top: 50%;
   left: 10%;
+}
+
+.bg-bidang {
+  background-image: url("/assets/images/bg-bidang.png");
+  background-size: cover;
+  background-position-x: right;
 }
 
 .bidang {
