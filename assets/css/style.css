@@ -54,7 +54,7 @@
 }
 
 header {
-  background-image: url("/kopsi/assets/images/header.svg");
+  background-image: url("/kopsi_smp_2021/assets/images/header.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -361,7 +361,7 @@ header .header-banner p {
 }
 
 .bg-bidang {
-  background-image: url("/assets/images/bg-bidang.png");
+  background-image: url("/kopsi_smp_2021/assets/images/bg-bidang.png");
   background-size: cover;
   background-position-x: right;
 }
@@ -693,7 +693,7 @@ header .header-banner p {
 
 .footer {
   width: 100%;
-  background-image: url("/kopsi/assets/images/footer.svg");
+  background-image: url("/kopsi_smp_2021/assets/images/footer.svg");
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
